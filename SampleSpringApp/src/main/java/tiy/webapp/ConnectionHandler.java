@@ -52,8 +52,8 @@ public class ConnectionHandler implements Runnable {
 //        System.out.println(inputFromClient.readLine());
 //        outputToClient.println("anything");
         while ((inputLine = inputFromClient.readLine()) != null) {
-            System.out.println(" " + inputLine);
-            outputToClient.println("This chat server made possible by: Coffee");
+            System.out.println(inputLine);
+            outputToClient.println(inputLine);
         }
     }
 
